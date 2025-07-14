@@ -1,0 +1,17 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Ignore Virtual Environments in subfolders
+*/chat_backend/
+*/pracgpt/
+*/pracgpt_frontend/
+
+# Ignore .env files
+.env
+
+# Ignore Streamlit cache
+.streamlit/
