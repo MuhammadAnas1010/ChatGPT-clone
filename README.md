@@ -1,4 +1,4 @@
-# 🚀 ChatGPT Clone — Full Stack AI Chat Application
+# 🚀 ChatGPT Clone BY Anas — Full Stack AI Chat Application
 
 A fully-functional ChatGPT-like clone built with:
 - 🛡️ **Authentication Backend** — FastAPI
