@@ -71,16 +71,15 @@ Redis (Session Cache)
 
 ## 📌 Project Structure
 
-
+```bash
 ChatGPT-Clone/
 │
-├── backend_auth/ # Auth service with FastAPI & JWT
-├── chat_backend/ # Chat service with FastAPI & LLM API
-├── frontend/ # Streamlit frontend
+├── backend_auth/     # Auth service with FastAPI & JWT
+├── chat_backend/     # Chat service with FastAPI & LLM API
+├── frontend/         # Streamlit frontend
 ├── .gitignore
 └── README.md
-
-
+```
 
 ---
 
