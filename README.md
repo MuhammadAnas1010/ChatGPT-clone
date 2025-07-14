@@ -71,6 +71,7 @@ Redis (Session Cache)
 
 ## 📌 Project Structure
 
+
 ChatGPT-Clone/
 │
 ├── backend_auth/ # Auth service with FastAPI & JWT
