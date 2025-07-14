@@ -67,10 +67,6 @@ Chat Backend (LLM API Integration) <--- PostgreSQL (Chat History)
 v
 Redis (Session Cache)
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 📌 Project Structure
@@ -83,9 +79,7 @@ ChatGPT-Clone/
 ├── .gitignore
 └── README.md
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -121,9 +115,7 @@ On successful registration, pushes a congratulation notification via RabbitMQ to
 
 Start the auth backend:
 
-bash
-Copy
-Edit
+
 uvicorn main:app --reload
 🧠 Chat Backend
 Also built on FastAPI
@@ -144,9 +136,6 @@ Resume previous chats
 
 Start the chat backend:
 
-bash
-Copy
-Edit
 uvicorn main:app --reload
 📌 Frontend
 Built with Streamlit
@@ -157,9 +146,7 @@ Communicates with both auth backend and chat backend.
 
 Start the frontend:
 
-bash
-Copy
-Edit
+
 cd frontend
 streamlit run app.py
 📌 Database
@@ -167,7 +154,6 @@ PostgreSQL
 
 Stores users, hashed passwords, and chat history.
 
-Redis
 
 Caches active chat sessions for quick access.
 
@@ -178,26 +164,6 @@ Integrated via Pika library in Python.
 
 RabbitMQ must be running locally:
 
-bash
-Copy
-Edit
-# Linux
-sudo systemctl start rabbitmq-server
-
-# Docker
-docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 rabbitmq:3
-📌 Environment Variables
-Each service uses .env files for sensitive configs:
-
-ini
-Copy
-Edit
-# Example
-POSTGRES_URL=postgresql://user:password@localhost/dbname
-REDIS_URL=redis://localhost:6379
-JWT_SECRET=your_secret
-OPENAI_API_KEY=your_openai_api_key
-RABBITMQ_URL=amqp://localhost
 📌 Features
 ✅ User Registration & Login (JWT)
 ✅ Chat with LLM API
