@@ -1,0 +1,11 @@
+# Ignore virtual environment
+pracgpt_frontend/
+.env
+__pycache__/
+*.pyc
+
+# Streamlit specific
+.streamlit/config.toml
+
+# Other
+*.log
